@@ -1,0 +1,4 @@
+/* Tailwind will handle most styling */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

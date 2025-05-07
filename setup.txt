@@ -1,0 +1,34 @@
+Projeyi çalıştırmak için sırasıyla yapmanız gereken adımlar:
+
+1. Öncelikle çalışma dizininize gidin:
+cd /Applications/XAMPP/xamppfiles/htdocs/yt-analysis
+
+2. Port çakışması sorunlarını önlemek için önce mevcut süreçleri sonlandırın:
+
+lsof -i :5002 | grep LISTEN | awk '{print $2}' | xargs kill -9
+lsof -i :3000 | grep LISTEN | awk '{print $2}' | xargs kill -9
+
+3. Node.js paketlerini güncelleyin (eğer gerekirse):
+npm install
+cd client
+npm install
+cd ..
+
+4. Server ve client uygulamalarını ayrı ayrı çalıştırın:
+    a. İlk terminal penceresinde sunucuyu başlatın:
+        node server.js
+    b. İkinci terminal penceresinde client uygulamasını başlatın:
+        cd client
+        npm start
+
+5. Alternatif olarak, hem sunucuyu hem de client'ı aynı anda şu komutla başlatabilirsiniz:
+   npm run dev
+
+Not: Eğer "ENOSPC" hatası alırsanız (disk alanı yetersizse), client klasöründeki önbelleği temizleyin:
+    cd client
+    rm -rf node_modules/.cache
+
+Uygulama başarıyla çalıştığında:
+- Sunucu http://localhost:5002 adresinde çalışacak
+- Client uygulaması http://localhost:3000 adresinde çalışacak
+- Web tarayıcınızda http://localhost:3000 adresini ziyaret ederek uygulamayı kullanabilirsiniz
