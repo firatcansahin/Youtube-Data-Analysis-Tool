@@ -3,16 +3,16 @@
 ## Application Screenshots
 
 ### Home Page
-[![Home Page](screenshot/home.png)](screenshot/home.png)
+[![Home Page](screenshots/home.png)](screenshots/home.png)
 
 ### Video Analysis
-[![Video Analysis](screenshot/video-analysis.png)](screenshot/video-analysis.png)
+[![Video Analysis](screenshots/video-analysis.png)](screenshots/video-analysis.png)
 
 ### Channel Analysis
-[![Channel Analysis](screenshot/channel-analysis.png)](screenshot/channel-analysis.png)
+[![Channel Analysis](screenshots/channel-analysis.png)](screenshots/channel-analysis.png)
 
 ### Enter Channel ID
-[![Enter Channel ID](screenshot/channel_id.png)](screenshot/channel_id.png)
+[![Enter Channel ID](screenshots/channel_id.png)](screenshots/channel_id.png)
 
 
 ## System Requirements
