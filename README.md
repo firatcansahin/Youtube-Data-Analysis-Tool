@@ -24,7 +24,7 @@
 
 1. Clone the repository:
 ```
-git clone <repository-url>
+git clone https://github.com/firatcansahin/Youtube-Data-Analysis-Tool.git
 cd yt-analysis
 ```
 
